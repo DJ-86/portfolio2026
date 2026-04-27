@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="David Jones — Junior Frontend Developer. Building structured, interactive web interfaces." />
+  <title>David Jones — Frontend Dev</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=Instrument+Sans:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#top" class="nav__logo" aria-label="Home">DJ<span class="nav__logo-dot">.</span></a>
+      <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Toggle menu">
+        <span></span><span></span>
+      </button>
+      <ul class="nav__menu" id="navMenu" role="list">
+        <li><a href="#about" class="nav__link">About</a></li>
+        <li><a href="#projects" class="nav__link">Projects</a></li>
+        <li><a href="#skills" class="nav__link">Skills</a></li>
+        <li><a href="#contact" class="nav__link nav__link--hi">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="top">
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" aria-labelledby="hero-heading">
+
+      <!-- Background label tape -->
+      <div class="hero__tape" aria-hidden="true">
+        <div class="hero__tape-track">
+          <span>JUNIOR FRONTEND DEVELOPER</span>
+          <span>LICHFIELD, UK</span>
+          <span>OPEN TO WORK</span>
+          <span>HTML · CSS · JS</span>
+        </div>
+        <div class="hero__tape-track">
+          <span>JUNIOR FRONTEND DEVELOPER</span>
+          <span>LICHFIELD, UK</span>
+          <span>OPEN TO WORK</span>
+          <span>HTML · CSS · JS</span>
+        </div>
+      </div>
+
+      <div class="hero__inner">
+        <div class="hero__name-block">
+          <p class="hero__eyebrow">Junior Frontend Developer</p>
+          <h1 class="hero__heading" id="hero-heading">
+            <span class="hero__name-first">David</span>
+            <span class="hero__name-last">Jones<span class="hero__accent">.</span></span>
+          </h1>
+        </div>
+
+        <div class="hero__right">
+          <p class="hero__statement">
+            I build structured, interactive web interfaces — thinking about how 
+            components, layout, and behaviour work together as systems, 
+            not just isolated pieces.
+          </p>
+          <div class="hero__actions">
+            <a href="#projects" class="btn btn--accent">See my work</a>
+            <a href="#contact" class="btn btn--outline">Let's talk</a>
+          </div>
+          <div class="hero__tags" aria-label="Technologies">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>WordPress</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Large background number — purely decorative -->
+      <div class="hero__bg-num" aria-hidden="true">01</div>
+    </section>
+
+
+    <!-- ===================== ABOUT ===================== -->
+    <section class="section about" id="about" aria-labelledby="about-heading">
+      <div class="section__inner">
+        <div class="about__layout">
+
+          <div class="about__header">
+            <p class="section__label">About</p>
+            <h2 class="section__heading" id="about-heading">
+              Building things<br />to understand<br />them.
+            </h2>
+            <a href="#projects" class="about__skip-link">Jump to projects →</a>
+          </div>
+
+          <div class="about__content">
+            <p class="about__lead">
+              I'm a junior frontend developer at the start of my career — 
+              building on solid fundamentals and learning through real projects.
+            </p>
+            <p class="about__body">
+              Rather than reaching for frameworks before I understand the underlying 
+              mechanics, I focus on how UI components, layout structure, and JavaScript 
+              behaviour connect as coherent systems. I'm not chasing complexity — 
+              I care about code that's clear and maintainable.
+            </p>
+            <p class="about__body">
+              I learn by shipping: building real things, breaking them, 
+              and understanding why.
+            </p>
+            <div class="about__stat-row">
+              <div class="about__stat">
+                <span class="about__stat-num">3</span>
+                <span class="about__stat-label">Projects shipped</span>
+              </div>
+              <div class="about__stat">
+                <span class="about__stat-num">1</span>
+                <span class="about__stat-label">Year building</span>
+              </div>
+              <div class="about__stat">
+                <span class="about__stat-num">∞</span>
+                <span class="about__stat-label">Things to learn</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ===================== PROJECTS ===================== -->
+    <section class="section projects" id="projects" aria-labelledby="projects-heading">
+      <div class="section__inner">
+
+        <div class="projects__header">
+          <p class="section__label">Projects</p>
+          <h2 class="section__heading" id="projects-heading">Things I've built.</h2>
+        </div>
+
+        <div class="projects__grid">
+
+          <!-- Project 01 -->
+          <article class="project-card" aria-labelledby="p1-heading">
+            <div class="project-card__top">
+              <span class="project-card__num" aria-hidden="true">01</span>
+              <ul class="project-card__tags" role="list">
+                <li>WordPress</li><li>HTML</li><li>CSS</li>
+              </ul>
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__heading" id="p1-heading">Small Business Web Presence</h3>
+              <p class="project-card__type">CMS Site Architecture</p>
+              <p class="project-card__desc">
+                A full WordPress site for a local trades business — built around a consistent 
+                content model and reusable templates. Designed so a non-technical owner 
+                could update it without breaking anything.
+              </p>
+              <div class="project-card__problems">
+                <p class="project-card__problem-label">Problems solved</p>
+                <ul>
+                  <li>Flexible page template system across service and contact pages</li>
+                  <li>Theme customisation that stays upgrade-safe</li>
+                  <li>Mobile-first layout that holds without excessive breakpoints</li>
+                </ul>
+              </div>
+            </div>
+            <div class="project-card__footer">
+              <a href="#" class="project-card__link btn btn--accent">View Project</a>
+              <a href="#" class="project-card__link project-card__link--ghost">Source ↗</a>
+            </div>
+          </article>
+
+          <!-- Project 02 — FEATURED -->
+          <article class="project-card project-card--featured" aria-labelledby="p2-heading">
+            <div class="project-card__top">
+              <span class="project-card__num" aria-hidden="true">02</span>
+              <ul class="project-card__tags" role="list">
+                <li>JavaScript</li><li>DOM</li><li>State</li>
+              </ul>
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__heading" id="p2-heading">Task &amp; Focus Tracker</h3>
+              <p class="project-card__type">UI State &amp; Behaviour System</p>
+              <p class="project-card__desc">
+                A browser-based productivity tracker managing task state, filter 
+                interactions, and session persistence — entirely vanilla JavaScript 
+                and localStorage. Every UI change reflects real underlying state.
+              </p>
+              <div class="project-card__problems">
+                <p class="project-card__problem-label">Problems solved</p>
+                <ul>
+                  <li>Predictable state model that keeps UI updates isolated from data logic</li>
+                  <li>Filter system where multiple active filters compose without edge cases</li>
+                  <li>Clean session persistence using structured localStorage data</li>
+                </ul>
+              </div>
+            </div>
+            <div class="project-card__footer">
+              <a href="#" class="project-card__link btn btn--accent">View Project</a>
+              <a href="#" class="project-card__link project-card__link--ghost">Source ↗</a>
+            </div>
+          </article>
+
+          <!-- Project 03 -->
+          <article class="project-card" aria-labelledby="p3-heading">
+            <div class="project-card__top">
+              <span class="project-card__num" aria-hidden="true">03</span>
+              <ul class="project-card__tags" role="list">
+                <li>HTML</li><li>CSS Grid</li><li>Flexbox</li>
+              </ul>
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__heading" id="p3-heading">Editorial Layout System</h3>
+              <p class="project-card__type">Responsive Interface Structure</p>
+              <p class="project-card__desc">
+                A content-heavy editorial layout built with CSS Grid and Flexbox — 
+                focused on typographic hierarchy, consistent spacing rhythm, 
+                and responsive structure that holds together at every viewport.
+              </p>
+              <div class="project-card__problems">
+                <p class="project-card__problem-label">Problems solved</p>
+                <ul>
+                  <li>Grid system allowing flexible content without losing visual baseline</li>
+                  <li>Typographic scale across breakpoints that maintains hierarchy</li>
+                  <li>Reusable layout primitives instead of one-off component styles</li>
+                </ul>
+              </div>
+            </div>
+            <div class="project-card__footer">
+              <a href="#" class="project-card__link btn btn--accent">View Project</a>
+              <a href="#" class="project-card__link project-card__link--ghost">Source ↗</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ===================== SKILLS ===================== -->
+    <section class="section skills" id="skills" aria-labelledby="skills-heading">
+      <div class="section__inner">
+        <div class="skills__layout">
+
+          <div class="skills__header">
+            <p class="section__label">Skills</p>
+            <h2 class="section__heading" id="skills-heading">What I work with.</h2>
+            <p class="skills__note">No overclaiming. Just what I actually know.</p>
+          </div>
+
+          <div class="skills__list">
+
+            <div class="skill-row" data-index="01">
+              <div class="skill-row__name">HTML</div>
+              <div class="skill-row__detail">
+                Semantic structure · Document hierarchy · Accessibility basics · ARIA roles
+              </div>
+              <div class="skill-row__bar" aria-label="Proficiency: strong foundation">
+                <div class="skill-row__fill" style="--fill: 78%"></div>
+              </div>
+            </div>
+
+            <div class="skill-row" data-index="02">
+              <div class="skill-row__name">CSS</div>
+              <div class="skill-row__detail">
+                Flexbox · Grid · Responsive systems · Custom properties · Mobile-first
+              </div>
+              <div class="skill-row__bar" aria-label="Proficiency: strong foundation">
+                <div class="skill-row__fill" style="--fill: 72%"></div>
+              </div>
+            </div>
+
+            <div class="skill-row" data-index="03">
+              <div class="skill-row__name">JavaScript</div>
+              <div class="skill-row__detail">
+                DOM manipulation · Events · State handling · localStorage · Form logic
+              </div>
+              <div class="skill-row__bar" aria-label="Proficiency: growing">
+                <div class="skill-row__fill" style="--fill: 60%"></div>
+              </div>
+            </div>
+
+            <div class="skill-row" data-index="04">
+              <div class="skill-row__name">WordPress</div>
+              <div class="skill-row__detail">
+                Site building · Theme customisation · Template structure · CMS setup
+              </div>
+              <div class="skill-row__bar" aria-label="Proficiency: solid">
+                <div class="skill-row__fill" style="--fill: 65%"></div>
+              </div>
+            </div>
+
+            <div class="skill-row skill-row--learning" data-index="05">
+              <div class="skill-row__name">Learning</div>
+              <div class="skill-row__detail">
+                Web performance · Component architecture · Testing fundamentals
+              </div>
+              <div class="skill-row__bar" aria-label="Currently learning">
+                <div class="skill-row__fill skill-row__fill--dashed" style="--fill: 20%"></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ===================== CONTACT ===================== -->
+    <section class="section contact" id="contact" aria-labelledby="contact-heading">
+      <div class="section__inner">
+
+        <div class="contact__top">
+          <p class="section__label">Contact</p>
+          <h2 class="section__heading contact__heading" id="contact-heading">
+            Let's build<br />something.
+          </h2>
+        </div>
+
+        <div class="contact__layout">
+
+          <div class="contact__info">
+            <p class="contact__desc">
+              I'm looking for junior frontend roles, freelance projects, 
+              and conversations with people building interesting things on the web.
+            </p>
+            <a href="mailto:davidmarkjones86@gmail.com" class="contact__email">
+              davidmarkjones86<wbr />@gmail.com
+            </a>
+            <div class="contact__socials">
+              <a href="https://github.com" class="contact__social" target="_blank" rel="noopener">GitHub ↗</a>
+              <a href="https://linkedin.com" class="contact__social" target="_blank" rel="noopener">LinkedIn ↗</a>
+            </div>
+          </div>
+
+          <form class="contact__form" id="contactForm" novalidate>
+            <div class="form-field" id="nameField">
+              <label class="form-field__label" for="name">Name</label>
+              <input class="form-field__input" type="text" id="name" name="name" autocomplete="name" placeholder="Your name" aria-required="true" />
+              <span class="form-field__error" id="nameError" role="alert" aria-live="polite"></span>
+            </div>
+            <div class="form-field" id="emailField">
+              <label class="form-field__label" for="email">Email</label>
+              <input class="form-field__input" type="email" id="email" name="email" autocomplete="email" placeholder="your@email.com" aria-required="true" />
+              <span class="form-field__error" id="emailError" role="alert" aria-live="polite"></span>
+            </div>
+            <div class="form-field" id="messageField">
+              <label class="form-field__label" for="message">Message</label>
+              <textarea class="form-field__input form-field__input--textarea" id="message" name="message" rows="5" placeholder="Tell me about what you're building…" aria-required="true"></textarea>
+              <span class="form-field__error" id="messageError" role="alert" aria-live="polite"></span>
+            </div>
+            <button class="btn btn--accent btn--full" type="submit">Send it →</button>
+            <div class="form__success" id="formSuccess" role="status" aria-live="polite" hidden>
+              Message sent — I'll be in touch soon.
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <p>David Jones · Junior Frontend Developer · Lichfield, UK</p>
+      <p>Built with HTML, CSS &amp; vanilla JavaScript</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
